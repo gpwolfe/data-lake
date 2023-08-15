@@ -1,0 +1,41 @@
+name: Dataset Submission Guidance
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  guide_submission:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comment on Issue
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const issueNumber = context.issue.number;
+            const comment = `
+            ## How to Submit a Dataset
+
+            Thank you for your interest in submitting a dataset for upload! Please follow the steps below to ensure a smooth submission process:
+
+            1. **Create an Issue**: Click on the "New Issue" button on the repository's Issues tab.
+
+            2. **Choose the Right Template**: Select the "Dataset Upload Request" template from the available templates.
+
+            3. **Fill in the Details**:
+               - **Dataset URL**: Provide the URL where the dataset is available online.
+               - **Dataset Name**: Enter a descriptive name for the dataset.
+               - **Description**: Give a brief overview of the dataset's contents and purpose.
+               - **Additional Information**: Include any other relevant details.
+
+            4. **Submit the Issue**: Once you've filled in the necessary information, click "Submit New Issue."
+
+            Please make sure you have the necessary rights or permissions to request the upload of the dataset. If you encounter any issues or have questions, feel free to ask in the issue comments.
+
+            Thank you for contributing to our project by submitting a dataset!
+            `;
+            github.issues.createComment({
+              issue_number: issueNumber,
+              body: comment
+            });
