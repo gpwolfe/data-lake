@@ -32,7 +32,7 @@ Additional Information: [Enter Additional Information]
 
 ## Properties
 
-Please name the properties included in your 
+Please name the properties included in your dataset.
 
 Additional Information: [Enter Property Types]
 
