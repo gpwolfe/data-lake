@@ -35,7 +35,9 @@ jobs:
 
             Thank you for contributing to our project by submitting a dataset!
             `;
-            github.issues.createComment({
+            octokit.issues.createComment({
               issue_number: issueNumber,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
               body: comment
             });
