@@ -18,22 +18,59 @@ Please provide a descriptive name for the dataset.
 
 Dataset Name: [Enter Dataset Name]
 
+## Author List
+
+Include full first name rather than initial (e.g.: John B. Smith rather than J.B. Smith) unless author is normally attributed by first initial(s).
+
+Author List: 
+
 ## Description
 
 Please provide a description of the dataset. Include information about what the dataset contains, its purpose, and any relevant context.
 
 Description: [Enter Dataset Description]
 
-## Additional Information (Optional)
+## Method
+
+- [ ] DFT
+- [ ] CCSD
+
+Other method(s):
+
+## Functional
+
+- [ ] PBE
+- [ ] PBEsol
+- [ ] rPBE
+- [ ] ...
+
+Other functional(s):
+
+## Basis set
+
+Enter basis set(s):
+
+## Properties
+
+Please name the properties included in your dataset.  
+- [ ] Atomization energy
+- [ ] Formation energy
+- [ ] Free energy
+- [ ] Potential energy
+
+- [ ] Atomic forces
+- [ ] Band gap
+- [ ] Cauchy stress
+- [ ] Virial stress
+
+Other property types: [Enter Property Types]
+
+## Additional Information
 
 If there are any additional details or requirements related to the dataset, please provide them here.
 
 Additional Information: [Enter Additional Information]
 
-## Properties
 
-Please name the properties included in your dataset.
-
-Additional Information: [Enter Property Types]
 
 <!-- Before submitting this issue, make sure you have the necessary rights or permissions to request the upload of this dataset. -->
