@@ -53,6 +53,12 @@ Please provide a description of the dataset. Include information about what the 
 
 Description: [Enter Dataset Description]
 
+## Software
+
+Software used for property calculations
+
+Software: [Enter Software]
+
 ## Method
 
 Select method used or enter in "Other method(s)"
