@@ -29,6 +29,12 @@ Please provide the DOI (preferred) or URL for related publication(s).
 
 Publication URL: [Paste Publication URL Here]
 
+## Dataset File Info
+  
+Approximate number of dataset files: [Enter Number of Files]
+  
+Approximate total size of dataset files: [Enter Total Size]
+
 ## Dataset Name
 
 Please provide a descriptive name for the dataset.
