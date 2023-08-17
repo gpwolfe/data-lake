@@ -13,6 +13,3 @@ Ensure you have filled out all relevant fields in the Excel spreadsheet template
   
 Please include your dataset name and your last name in the name of your Excel file.  
 Example: `C_allotrope_bixby_2022_Bixby.xlsx`  
-
-Attach your Excel information file by dragging and dropping or clicking below.
-Attach your dataset files by dragging and dropping or clicking below.
