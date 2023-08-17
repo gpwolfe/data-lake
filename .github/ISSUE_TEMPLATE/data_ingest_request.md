@@ -2,11 +2,20 @@
 name: Dataset Upload Request
 about: Request the upload of a new dataset
 title: "[Dataset Upload] "
-labels: dataset upload
-assignees: ""
+labels: ''
+assignees: ''
+
 ---
 
-<!-- If you have filled out the Excel template for dataset submission, you do not need to fill out this issue template. You may use this or the Submit Dataset Excel template and attach your completed Excel file. -->
+**If you have filled out the Excel template for dataset submission, you do not need to fill out this issue template. You may use this or the Submit Dataset Excel template and attach your completed Excel file.**
+
+## Contact
+
+This is how we will contact you if we have questions or issues regarding ingestion of your dataset. Please include a reliable email address.
+
+Name: [Enter Name]
+Email: [Enter Email]
+Phone: [Optional]
 
 ## Dataset URL
 
@@ -41,7 +50,6 @@ Description: [Enter Dataset Description]
 ## Method
 
 Select method used or enter in "Other method(s)"
-- [x] Example
 
 - [ ] DFT
 - [ ] CCSD
@@ -51,7 +59,6 @@ Other method(s): [Enter Method(s)]
 
 ## Functional
 Select functional used or enter in "Other functional(s)"
-- [x] Example
 
 - [ ] PBE
 - [ ] PBEsol
@@ -68,7 +75,6 @@ Basis set(s): [Enter Basis Sets]
 ## Properties
 
 Please select the properties included in your dataset or enter in "Other property types".  
-- [x] Example
 
 - [ ] Atomization energy
 - [ ] Formation energy
@@ -90,4 +96,4 @@ Additional Information: [Enter Additional Information]
 
 
 
-<!-- Before submitting this issue, make sure you have the necessary rights or permissions to request the upload of this dataset. -->
+**Before submitting this issue, make sure you have the necessary rights or permissions to request the upload of this dataset.**
