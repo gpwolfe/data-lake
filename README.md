@@ -1,7 +1,7 @@
 # ColabFit-Data
 A repository to request ingestion of datasets to ColabFit
   
-## Outline for README/instructions  
+## Instructions  
 
 ### Preferred: Submit Excel template
 *Download template file:*
