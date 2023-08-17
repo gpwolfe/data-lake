@@ -1,6 +1,6 @@
 ---
 name: Dataset Upload Request
-about: Request the upload of a new dataset
+about: Request the upload of a new dataset without Excel template
 title: "[Dataset Upload] "
 labels: ''
 assignees: ''
