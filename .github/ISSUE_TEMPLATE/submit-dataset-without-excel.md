@@ -1,5 +1,5 @@
 ---
-name: Dataset Upload Request
+name: Submit Dataset Without Excel
 about: Request the upload of a new dataset without Excel template
 title: "[Dataset Upload] "
 labels: ''
