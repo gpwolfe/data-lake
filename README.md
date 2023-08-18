@@ -53,17 +53,18 @@ A repository to request ingestion of datasets to ColabFit
 ## For datasets hosted online
   
 #### Preferred: Submit an Issue using Excel template
-*Download Excel template file:*
-* Select [CF_excel_dataset_template.xlsx](https://github.com/gpwolfe/colabfit-data/blob/main/CF_dataset_request_template.xltx)
-* Choose "Download raw file" (on far right of activity bar)
-
-*Edit template and save as a new xlsx file:* 
-* Open template file
-* `Save as` &rarr; choose `File Format: Excel Workbook (.xlsx)`
-* Rename the Excel file. Include the short name for your dataset and your last name in the file name  
-  * Example: `Dataset_name_Your-name.xlsx` &rarr; `C_allotrope_bixby_2022_Bixby.xlsx`
-* Fill out the Excel template
-
+  
+**Fill out the dataset information spreadsheet**
+  
+* [Follow this link](https://github.com/gpwolfe/colabfit-data/blob/main/CF_dataset_request_template.xltx) and choose "Download raw file" (on far right of activity bar) to get the Excel template for dataset information
+* Save the template as a new spreadsheet
+  * Open template file with Excel
+  * Go to `Save as` and choose `File Format: Excel Workbook (.xlsx)`
+  * Choose your dataset folder as the save location
+  * Rename the Excel file. Include the short name for your dataset and your last name in the file name  
+    * Example: `Dataset_name_Your-name.xlsx` &rarr; `C_allotrope_bixby_2022_Bixby.xlsx`
+* Fill out the Excel template and save your file
+  
 *Submit a GutHub Issue* 
 * Click on `Issues`, above
 * Click on `New Issue`
@@ -71,9 +72,9 @@ A repository to request ingestion of datasets to ColabFit
 * Add a title with your name and your dataset name
 * Attach your Excel file by dragging and dropping or selecting from your computer
 * Click `Submit new issue`
-
+  
 ### Alternatively: Fill out and submit non-Excel Issue template
-
+  
 * Open new issue, selecting `Submit Dataset Without Excel`
 * Fill out Issue template
 * Click `Submit new issue`
