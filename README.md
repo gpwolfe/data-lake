@@ -1,10 +1,8 @@
 # ColabFit-Data
 This repository offers a way to submit your datasets to the ColabFit Exchange.  
   
-# Overview  
+## Overview  
   
-## For datasets stored on local machine(s)
-
 * Create a fork of the main branch of the colabfit-data repository
 * Upload your dataset files
 * Fill out the [dataset request sheet](https://github.com/gpwolfe/colabfit-data/blob/main/CF_dataset_request.md)
