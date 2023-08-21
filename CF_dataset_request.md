@@ -2,45 +2,45 @@
   
 ### Contributor
 
-#### Name:
+#### [Name:][name]
 <!-- Enter your name -->
 
-#### Email:
+#### [Email:][email]
 <!-- Enter your email. This will be used for correspondence about dataset submission -->
   
 
 ### Dataset
 
-#### Dataset name:
+#### [Dataset name:][dname]
 <!-- Enter dataset name -->
 
-#### Author list:
+#### [Author list:][auth]
 <!-- Enter list of dataset author names as "FirstName1 LastName1, FirstName2 LastName2". Do not use initials unless author is normally attributed by initial(s) -->
 
-#### Links:
+#### [Links:][link]
 <!-- Enter list of resources describing dataset (DOI if available). Include DOI/URL for dataset, if aleady hosted online -->
   
-#### Elements list:
+#### [Elements list:][elem]
 <!-- List elements present in dataset using elemental symbols (e.g., Si, Al, C, etc.) -->
 
-#### Software:
+#### [Software:][soft]
 <!-- Enter the software and version used for property calculations (e.g., VASP 5.4.1, ORCA 5.0.3) -->
 
 
-#### Method:
+#### [Method:][meth]
 <!-- Enter the method(s) used for property calculations (e.g., DFT, CCSD, CCSD(T)) -->
 
-#### Functional:
+#### [Functional:][func]
 <!-- Enter the functional(s) used for property calculations (e.g., PBE, PBEsol, B3LYP, SCAN) -->
 
-#### Basis set:
+#### [Basis set:][bset]
 <!-- Enter the basis set used for property calculations (e.g., cc-pVDZ, aug-cc-PVTZ) -->
 
-#### Configuration name key:
+#### [Configuration name key:][cokey]
 <!-- A configuration’s name will be used for grouping and label application. Names will default to file names if no key is provided. In an extended XYZ file, for example, setting the Configuration Name Key to an existing key "config_name" would use the values provided by this key to name configurations -->
 
 
-#### Property Definitions
+#### [Property Definitions][pd]
 <!-- Select a predefined property if applicable to your data. See definitions at https://github.com/colabfit/colabfit-tools/blob/development/colabfit/tools/property_definitions.py.
 
 To select a property, replace the corresponding "[ ]" with "[x]" or "[X]".
