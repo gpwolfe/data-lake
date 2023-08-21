@@ -1,7 +1,5 @@
 # Detailed Instructions  
   
-## For datasets stored on local machine(s)
-
 **Prepare your dataset**
   
 * Create a folder to contain all your dataset files and ONLY your dataset files
