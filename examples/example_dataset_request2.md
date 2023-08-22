@@ -36,25 +36,23 @@ This data set was used to generate a multi-element linear SNAP potential for InP
 ### Included properties
 > See [the current list of ColabFit property definitions](https://materials.colabfit.org/browse/property-definitions). If you believe your data does not match one of the existing definitions, then you must submit a new property definition following [the template provided in the examples folder](https://github.com/gpwolfe/colabfit-data/blob/main/examples/example_property_definitions.py).  
 
-|Name|Units|Notes|
-| --- | --- | --- |
-| potential energy | eV | Reported relative to ground state structure, so they have all been shifted by subtracting off 3.48 eV/atom
-| atomic forces | eV/Ang | |
-| cauchy stress | GPA | Stored as full (3,3) stress tensor
+|   Name            |   Units   |   Notes   |
+|   ---             |   ---     |   ---     |
+|   potential energy |          |           |
+|   atomic forces   |           |           |
+|   cauchy stress   |           |           |
   
 ## Configurations
 > Basic information explaining the types of configurations in the dataset, and how they are organized.  
 > Elements should be listed by chemical symbol
 
 
-**Elements**: In, P  
-**Number of configurations**: 1894  
+**Elements**:  
+**Number of configurations**:    
 
 ### Naming convention
 > If your configurations have names, please describe where their names can be found (e.g., as a field in an `ASE.Atoms.info` dictionary).
 ​
-Each configuration is stored as a JSON file under `JSON/<group_name>/<config_name>`.  
-The full file path can be taken as the name of the configuration.
 ​
 ### Configuration sets
 > Configuration sets are used to define a conceptual grouping over a collection of atomic configurations. Configuration sets are constructed via regex filtering on configuration names.
@@ -62,15 +60,8 @@ The full file path can be taken as the name of the configuration.
 
 |Regex|Description|
 |---|---|
-|^Bulk| Ground state configuration for bulk zincblende|
-|^EOS| Bulk zincblende with uniform expansion and compression
-|^Shear | Bulk zincblende with random cell shape modifications
-|^Strain | Uniaxially strained bulk zinc blende
-|^a(In|P) | Antisite defects in InP
-|^aa$ | Diantisite defects
-|^i(In\|P) | Interstitial defects in InP
-|^vP | Vacancy defects in InP
-|^vv | Divacancy defects in InP
+|   |   |
+
   
 ### Configuration labels
 > Configuration labels can be attached to your data to improve interpretability. This is done via regex matching on the configuration name.
@@ -78,14 +69,8 @@ The full file path can be taken as the name of the configuration.
 
 | Regex | Label |
 | --- | --- |
-|^Bulk\|EOS\|Shear\|Strain | zincblende
-| ^EOS | eos| 
-| ^Shear\|Strain | strain
-| ^a(In\|P) | antisite
-| ^aa | diantisite
-| ^i(In\|P) | interstitial
-| ^v(In\|P\|v) | vacancy
+|     |     |
+
   
 ### Distribution License
 >The license under which the content will be distributed (e.g. Creative Commons Zero)
-Creative Commons Zero
