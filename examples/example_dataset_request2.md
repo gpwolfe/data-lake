@@ -1,14 +1,14 @@
 # Contribute content
-​
+
 ## Contributor
-> Contact information about the person requesting/uploading the data. Used for communication purposes.
+> Contact information about the person requesting/submitting the data. Used for communication purposes.
 ​
 
 **Name**: Josh Vita  
-**Email**: vita1@llnl.gov  
-​
+**Email**: vita1@llnl.gov
+
 ## Dataset
-> Any information necessary to help the ColabFit find and access the data, and to correctly cite relevant material. The "name" and "description" will be used when publishing to the ColabFit exchange, and should be human-readable.
+> Any information necessary to help the ColabFit find and access the data, and to correctly cite relevant material. The "name" and "description" will be used when publishing to the ColabFit exchange, and should be human-readable. Author list should include full first names, unless the author is normally attributed by initials. Links should include relevant publications and online location of dataset, if available.
 
 **Name**:  
 InP_JPCA2020  
@@ -22,16 +22,17 @@ Mary Alice Cusentino, Mitchell A. Wood, Aidan P. Thompson
 
 **Description**:  
 This data set was used to generate a multi-element linear SNAP potential for InP as published in Cusentino, M.A. et. al, J. Chem. Phys. (2020). Intended to produce an interatomic potential for indium phosphide capable of capturing high-energy defects that result from radiation damage cascades.
-​
+
 ## Calculations  
 > Details regarding how the data was computed in order to improve reproducibility. Provide as much information as possible. Input files are highly encouraged.
+> Additional details might include functional, basis set, energy cutoff, k-point grid, reference energy, etc.
 ​
 
 **Method**: DFT  
 **Software**: VASP  
 **Additional details**: LDA XC-functional, PAW pseudopotential, Monkhorst-Pack k-point grid with spacings of 0.17 or 0.72 $Ang^{-1}$ depending upon system size, 500 eV plane wave cutoff.  
 **Files**: VASP INCAR files are provided for each atomic configuration.  
-​
+
 ### Included properties
 > See [the current list of ColabFit property definitions](https://materials.colabfit.org/browse/property-definitions). If you believe your data does not match one of the existing definitions, then you must submit a new property definition following [the template provided in the examples folder](https://github.com/gpwolfe/colabfit-data/blob/main/examples/example_property_definitions.py).  
 
@@ -40,13 +41,15 @@ This data set was used to generate a multi-element linear SNAP potential for InP
 | potential energy | eV | Reported relative to ground state structure, so they have all been shifted by subtracting off 3.48 eV/atom
 | atomic forces | eV/Ang | |
 | cauchy stress | GPA | Stored as full (3,3) stress tensor
+  
 ## Configurations
 > Basic information explaining the types of configurations in the dataset, and how they are organized.  
+> Elements should be listed by chemical symbol
 
 
 **Elements**: In, P  
 **Number of configurations**: 1894  
-​
+
 ### Naming convention
 > If your configurations have names, please describe where their names can be found (e.g., as a field in an `ASE.Atoms.info` dictionary).
 ​
@@ -68,6 +71,7 @@ The full file path can be taken as the name of the configuration.
 |^i(In\|P) | Interstitial defects in InP
 |^vP | Vacancy defects in InP
 |^vv | Divacancy defects in InP
+  
 ### Configuration labels
 > Configuration labels can be attached to your data to improve interpretability. This is done via regex matching on the configuration name.
 ​
@@ -81,3 +85,7 @@ The full file path can be taken as the name of the configuration.
 | ^aa | diantisite
 | ^i(In\|P) | interstitial
 | ^v(In\|P\|v) | vacancy
+  
+### Distribution License
+>The license under which the content will be distributed (e.g. Creative Commons Zero)
+Creative Commons Zero
