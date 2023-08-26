@@ -1,14 +1,11 @@
 ---
-name: Submit Dataset Without Excel
-about: Request the upload of a new dataset without Excel template
+name: Submit Dataset
+about: Request the upload of a new dataset
 title: "[Dataset Upload] "
 labels: ''
 assignees: ''
 
 ---
-
-**If you have filled out the Excel template for dataset submission, you do not need to fill out this issue template. You may use this or the Submit Dataset Excel 
-template and attach your completed Excel file.**
 
 ## Contact
 
