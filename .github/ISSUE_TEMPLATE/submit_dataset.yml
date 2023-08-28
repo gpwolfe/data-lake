@@ -41,7 +41,7 @@ body:
     attributes:
       label: Links
       description: Provide links to dataset files and related publications
-      placeholder: https://www.example.com/example_dataset, https://www.example.com/example_publication
+      placeholder: https://www.example.com/
     validations:
       required: true
   - type: textarea
@@ -49,7 +49,7 @@ body:
     attributes:
       label: Dataset description
       description: Provide a human-readable description of the dataset
-      placeholder: What does this dataset contain? Why was it created?
+      placeholder: "What does this dataset contain?\nWhy was it created?"
     validations:
       required: true
 
@@ -59,7 +59,7 @@ body:
     attributes:
       label: File details
       description: Provide details about accessing the dataset
-      placeholder: ex. 150 zipped CIF files. Python parsing script available on dataset GitHub repo.
+      placeholder: "ex. 150 zipped CIF files.\nTotal size: 200 MB\nPython parsing script available on dataset GitHub repo."
 
   # Calculations
   - type: dropdown
