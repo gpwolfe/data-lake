@@ -1,0 +1,183 @@
+name: Dataset Submission
+description: Submit a dataset
+title: "[Dataset Submission]: "
+labels: ["dataset"]
+# assignees:
+#   - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for using the ColabFit Exchange!
+  # Contact Info
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: Please enter your name
+      placeholder: ex. John Smith
+    validations:
+      required: true
+  - type: input
+    id: email
+    attributes:
+      label: Email
+      description: Please enter your email.
+      placeholder: ex. email@example.com
+    validations:
+      required: true
+  # Dataset Info
+
+  - type: textarea
+    id: authors
+    attributes:
+      label: Author List
+      description: Enter a comma-separated list of authors. Use full names rather than initials, unless author is usually attributed by inital.
+      placeholder: ex. John B. Smith
+      # value: "A bug happened!"
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Links
+      description: Provide links to dataset files and related publications.
+      placeholder: https://www.example.com/example_dataset, https://www.example.com/example_publication
+    validations:
+      required: true
+  - type: textarea
+    id: dataset-description
+    attributes:
+      label: Dataset Description
+      description: Provide a human-readable description of the dataset.
+      placeholder: What does this dataset contain? Why was it created?
+      # value: "A bug happened!"
+    validations:
+      required: true
+  - type: textarea
+    id: dataset-description
+    attributes:
+      label: Dataset Description
+      description: Provide a human-readable description of the dataset.
+      placeholder: What does this dataset contain? Why was it created?
+      # value: "A bug happened!"
+    validations:
+      required: true
+  # File details
+  - type: textarea
+    id: files
+    attributes:
+      label: File Details
+      description: Provide details about accessing the dataset
+      placeholder: ex. 150 zipped CIF files. Python parsing script available on dataset GitHub repo.
+
+  # Calculations
+  - type: dropdown
+    id: method
+    attributes:
+      label: Method
+      multiple: true
+      description: Calculation level of theory
+      options:
+        - DFT (default)
+        - CCSD
+        - CCSD(T)
+        - Other (provide method below)
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: method-if-other
+    attributes:
+      label: Method (Other)
+      description: If you selected Other, please enter level of theory
+      #placeholder: What does this dataset contain? Why was it created?
+      # value: "A bug happened!"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: software
+    attributes:
+      label: Software
+      description: Which software was used for property calculations?
+      options:
+        - FHI-aims
+        - Gaussian 09
+        - Gaussian 16
+        - ORCA
+        - Psi4
+        - Quantum ESPRESSO
+        - VASP
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: software-if-other
+    attributes:
+      label: Software (Other)
+      description: If you selected Other, please enter software used
+      #placeholder: What does this dataset contain? Why was it created?
+      # value: "A bug happened!"
+    validations:
+      required: false
+  - type: textarea
+    id: software-version
+    attributes:
+      label: Software Version
+      description: If known, please enter software version
+      #placeholder: What does this dataset contain? Why was it created?
+      # value: "A bug happened!"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-details
+    attributes:
+      label: Additional Details
+      description: Please enter additional details of data computation, if known.
+      placeholder: ex. XC functional, basis set, plane wave cutoff value, k-point grid
+    validations:
+      required: false
+
+  # Properties
+  - type: checkboxes
+    id: property-types
+    attributes:
+      label: Property Types
+      description: Select properties present in dataset
+      options:
+        - label: Atomic forces
+        - label: Atomization energy
+        - label: Band gap
+        - label: Cauchy stress
+        - label: Formation energy
+        - label: Free energy
+        - label: Potential energy
+        - label: Other/Additional
+
+  - type: textarea
+    id: property-additional
+    attributes:
+      label: Other/Additional property
+      description: If you selected Other/Additional, please enter properties below
+    validations:
+      required: false
+
+  - type: textarea
+    id: property-additional
+    attributes:
+      label: Other/Additional property
+      description: If you selected Other/Additional, please enter properties below
+    validations:
+      required: false
+
+  # Verify permission
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Permissions
+      # description: I confirm that I have the necessary permissions to submit this dataset
+      options:
+        - label: I confirm that I have the necessary permissions to submit this dataset
+          required: true
