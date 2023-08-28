@@ -22,7 +22,7 @@ body:
     id: email
     attributes:
       label: Email
-      description: Please enter your email.
+      description: Please enter your email
       placeholder: ex. email@example.com
     validations:
       required: true
@@ -32,7 +32,7 @@ body:
     id: authors
     attributes:
       label: Authors
-      description: Enter a comma-separated list of authors. Use full names rather than initials, unless author is usually attributed by inital.
+      description: Enter a comma-separated list of authors. Use full names rather than initials, unless author is usually attributed by inital
       placeholder: ex. John B. Smith
     validations:
       required: true
@@ -40,7 +40,7 @@ body:
     id: links
     attributes:
       label: Links
-      description: Provide links to dataset files and related publications.
+      description: Provide links to dataset files and related publications
       placeholder: https://www.example.com/example_dataset, https://www.example.com/example_publication
     validations:
       required: true
@@ -48,7 +48,7 @@ body:
     id: dataset-description
     attributes:
       label: Dataset description
-      description: Provide a human-readable description of the dataset.
+      description: Provide a human-readable description of the dataset
       placeholder: What does this dataset contain? Why was it created?
     validations:
       required: true
@@ -88,7 +88,7 @@ body:
     id: software
     attributes:
       label: Software
-      description: Which software was used for property calculations?
+      description: Enter software used for property calculations
       options:
         - FHI-aims
         - Gaussian 09
@@ -123,7 +123,7 @@ body:
     id: additional-details
     attributes:
       label: Additional details
-      description: Please enter additional details of data computation, if known.
+      description: Please enter additional details of data computation, if known
       placeholder: ex. XC functional, basis set, plane wave cutoff value, k-point grid
     validations:
       required: false
@@ -162,7 +162,7 @@ body:
       required: true
 
   # Configurations
-  -type: input
+  - type: input
     id: elements
     attributes:
       label: Elements
