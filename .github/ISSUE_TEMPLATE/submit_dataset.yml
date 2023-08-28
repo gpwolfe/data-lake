@@ -162,7 +162,7 @@ body:
       required: true
 
   # Configurations
-  -type: input
+  - type: input
     id: elements
     attributes:
       label: Elements
