@@ -1,4 +1,4 @@
-name: Dataset Submission
+name: Dataset submission/request
 description: Submit a dataset
 title: "[Dataset Submission]: "
 labels: ["dataset"]
@@ -148,7 +148,7 @@ body:
     id: property-additional
     attributes:
       label: Other/additional property
-      description: If using a property other than one from  <a href="https://materials.colabfit.org/browse/property-definitions">the approved ColabFit list</a>, you should specify an property definition following the format shown <a href="https://github.com/gpwolfe/colabfit-data/blob/main/examples/example_property_definitions.py"> in the ColabFit standard /a>
+      description: If using a property other than one from  <a href="https://materials.colabfit.org/browse/property-definitions">the approved ColabFit list</a>, you should specify an property definition following the format shown <a href="https://github.com/gpwolfe/colabfit-data/blob/main/examples/example_property_definitions.py"> in the ColabFit standard </a>
     validations:
       required: false
 
@@ -170,7 +170,32 @@ body:
       placeholder: ex. C, H, O, N
     validations:
       required: true
+  - type: input
+    id: num-configs
+    attributes:
+      label: Number of Configurations
+      description: Enter number of configurations contained in dataset
+    validations:
+      required: true
+  - type: textarea
+    id: config-names
+    attributes:
+      label: Naming convention
+      description: If your configurations have names, please describe where their names can be found
+      placeholder: 'ex. File headers contain key "config_name"'
 
+  - type: textarea
+    id: config-sets
+    attributes:
+      label: Configuration sets
+      description: Configuration sets are used to define a conceptual grouping over a collection of atomic configurations. Configuration sets are constructed via regex filtering on configuration names.
+      placeholder: "Define set name and corresponding regex:\n^Bulk = Ground state configuration for bulk zincblende\n^Shear: Bulk zincblende with random cell shape modifications"
+  - type: textarea
+    id: config-labels
+    attributes:
+      label: Configuration labels
+      description: Configuration labels can be attached to your data to improve interpretability. This is done via regex matching on the configuration name.
+      placeholder: "^i(In|P) = interstitial\n^v(In|P|v) = vacancy"
   - type: input
     id: license
     attributes:
