@@ -34,7 +34,6 @@ body:
       label: Author List
       description: Enter a comma-separated list of authors. Use full names rather than initials, unless author is usually attributed by inital.
       placeholder: ex. John B. Smith
-      # value: "A bug happened!"
     validations:
       required: true
   - type: textarea
@@ -51,16 +50,6 @@ body:
       label: Dataset Description
       description: Provide a human-readable description of the dataset.
       placeholder: What does this dataset contain? Why was it created?
-      # value: "A bug happened!"
-    validations:
-      required: true
-  - type: textarea
-    id: dataset-description
-    attributes:
-      label: Dataset Description
-      description: Provide a human-readable description of the dataset.
-      placeholder: What does this dataset contain? Why was it created?
-      # value: "A bug happened!"
     validations:
       required: true
   # File details
