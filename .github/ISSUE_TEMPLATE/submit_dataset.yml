@@ -153,17 +153,10 @@ body:
     validations:
       required: false
 
-  - type: textarea
-    id: property-additional
-    attributes:
-      label: Other/Additional property
-      description: If you selected Other/Additional, please enter properties below
-    validations:
-      required: false
 
   # Verify permission
   - type: checkboxes
-    id: terms
+    id: permissions
     attributes:
       label: Permissions
       # description: I confirm that I have the necessary permissions to submit this dataset
