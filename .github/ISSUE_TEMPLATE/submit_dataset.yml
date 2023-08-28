@@ -1,5 +1,5 @@
 name: Dataset submission/request
-description: Submit a dataset
+description: Submit/request a dataset
 title: "[Dataset Submission]: "
 labels: ["dataset"]
 # assignees:
@@ -32,7 +32,7 @@ body:
     id: authors
     attributes:
       label: Authors
-      description: Enter a comma-separated list of authors. Use full names rather than initials, unless author is usually attributed by inital
+      description: "Enter a comma-separated list of authors.\nUse full first names rather than initials, unless author is usually attributed by inital(s)"
       placeholder: ex. John B. Smith
     validations:
       required: true
@@ -104,7 +104,7 @@ body:
     id: software-if-other
     attributes:
       label: Software (other)
-      description: If you selected Other, please enter software used
+      description: 'If you selected "Other", please enter software used'
       #placeholder: What does this dataset contain? Why was it created?
       # value: "A bug happened!"
     validations:
@@ -142,7 +142,7 @@ body:
         - label: Formation energy
         - label: Free energy
         - label: Potential energy
-        - label: other/additional
+        - label: Other/additional
 
   - type: textarea
     id: property-additional
@@ -157,7 +157,7 @@ body:
     attributes:
       label: Property details
       description: Enter details for each property; units, per-atom, any additional details
-      placeholder: ex. potential-energy - units=eV, per-atom=false
+      placeholder: "ex. potential-energy: units=eV, per-atom=false"
     validations:
       required: true
 
