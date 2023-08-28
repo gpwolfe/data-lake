@@ -31,7 +31,7 @@ body:
   - type: textarea
     id: authors
     attributes:
-      label: Author List
+      label: Authors
       description: Enter a comma-separated list of authors. Use full names rather than initials, unless author is usually attributed by inital.
       placeholder: ex. John B. Smith
     validations:
@@ -47,16 +47,17 @@ body:
   - type: textarea
     id: dataset-description
     attributes:
-      label: Dataset Description
+      label: Dataset description
       description: Provide a human-readable description of the dataset.
       placeholder: What does this dataset contain? Why was it created?
     validations:
       required: true
+
   # File details
   - type: textarea
     id: files
     attributes:
-      label: File Details
+      label: File details
       description: Provide details about accessing the dataset
       placeholder: ex. 150 zipped CIF files. Python parsing script available on dataset GitHub repo.
 
@@ -66,7 +67,7 @@ body:
     attributes:
       label: Method
       multiple: true
-      description: Calculation level of theory
+      description: Calculation level of theory. Select all that apply
       options:
         - DFT (default)
         - CCSD
@@ -75,13 +76,11 @@ body:
       default: 0
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: method-if-other
     attributes:
-      label: Method (Other)
+      label: Method (other)
       description: If you selected Other, please enter level of theory
-      #placeholder: What does this dataset contain? Why was it created?
-      # value: "A bug happened!"
     validations:
       required: false
 
@@ -101,19 +100,19 @@ body:
         - Other
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: software-if-other
     attributes:
-      label: Software (Other)
+      label: Software (other)
       description: If you selected Other, please enter software used
       #placeholder: What does this dataset contain? Why was it created?
       # value: "A bug happened!"
     validations:
       required: false
-  - type: textarea
+  - type: input
     id: software-version
     attributes:
-      label: Software Version
+      label: Software version(s)
       description: If known, please enter software version
       #placeholder: What does this dataset contain? Why was it created?
       # value: "A bug happened!"
@@ -123,7 +122,7 @@ body:
   - type: textarea
     id: additional-details
     attributes:
-      label: Additional Details
+      label: Additional details
       description: Please enter additional details of data computation, if known.
       placeholder: ex. XC functional, basis set, plane wave cutoff value, k-point grid
     validations:
@@ -133,7 +132,7 @@ body:
   - type: checkboxes
     id: property-types
     attributes:
-      label: Property Types
+      label: Property types
       description: Select properties present in dataset
       options:
         - label: Atomic forces
@@ -143,23 +142,50 @@ body:
         - label: Formation energy
         - label: Free energy
         - label: Potential energy
-        - label: Other/Additional
+        - label: other/additional
 
   - type: textarea
     id: property-additional
     attributes:
-      label: Other/Additional property
-      description: If you selected Other/Additional, please enter properties below
+      label: Other/additional property
+      description: If using a property other than one from  <a href="https://materials.colabfit.org/browse/property-definitions">the approved ColabFit list</a>, you should specify an property definition following the format shown <a href="https://github.com/gpwolfe/colabfit-data/blob/main/examples/example_property_definitions.py"> in the ColabFit standard /a>
     validations:
       required: false
 
+  - type: textarea
+    id: property-details
+    attributes:
+      label: Property details
+      description: Enter details for each property; units, per-atom, any additional details
+      placeholder: ex. potential-energy - units=eV, per-atom=false
+    validations:
+      required: true
+
+  # Configurations
+  -type: input
+    id: elements
+    attributes:
+      label: Elements
+      description: Enter elements as comma-separated list of chemical symbols
+      placeholder: ex. C, H, O, N
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: Distribution license
+      description: The license under which the content is distributed
+      placeholder: ex. Creative Commons Zero
+    validations:
+      required: true
 
   # Verify permission
   - type: checkboxes
     id: permissions
     attributes:
       label: Permissions
-      # description: I confirm that I have the necessary permissions to submit this dataset
+      description: Only applicable if uploading data files
       options:
         - label: I confirm that I have the necessary permissions to submit this dataset
-          required: true
+          required: false
