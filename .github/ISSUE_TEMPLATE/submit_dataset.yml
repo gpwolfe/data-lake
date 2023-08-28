@@ -27,6 +27,12 @@ body:
     validations:
       required: true
   # Dataset Info
+  - type: input
+    id: dataset-name
+    attributes:
+      label: Dataset name
+      description: "Enter a short, human-readable dataset name to be used when publishing to the ColabFit Exchange\nUse underscores instead of spaces"
+      placeholder: "CHON_Smith_2023"
 
   - type: textarea
     id: authors
