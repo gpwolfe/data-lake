@@ -77,11 +77,10 @@ body:
       multiple: true
       description: Calculation level of theory. Select all that apply
       options:
-        - DFT (default)
+        - DFT
         - CCSD
         - CCSD(T)
         - Other (provide method below)
-      default: 0
     validations:
       required: true
   - type: input

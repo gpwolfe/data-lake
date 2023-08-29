@@ -1,7 +1,7 @@
 ---
 name: Submit Dataset
 about: Submit your dataset files via pull request
-title: ''
+title: '[DATASET NAME] [YOUR NAME]'
 
 ---
 
@@ -10,4 +10,3 @@ title: ''
 Please ensure you have:
 - [ ] Included your dataset name and last name in the title of this pull request
 - [ ] Uploaded all your dataset files to a single directory
-- [ ] Filled out the dataset request sheet
