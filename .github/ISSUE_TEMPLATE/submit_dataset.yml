@@ -1,6 +1,6 @@
 name: Dataset submission/request
 description: Submit/request a dataset
-title: "[Dataset Submission]: "
+title: "[Dataset submission]: "
 labels: ["dataset"]
 # assignees:
 #   - octocat
