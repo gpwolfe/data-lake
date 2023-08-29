@@ -32,6 +32,8 @@ body:
       label: Dataset name
       description: "Enter a short, human-readable dataset name to be used when publishing to the ColabFit Exchange\nUse underscores instead of spaces"
       placeholder: "CHON_Smith_2023"
+    validations:
+      required: true
   - type: textarea
     id: authors
     attributes:
@@ -64,6 +66,8 @@ body:
       label: File details
       description: Provide details about accessing the dataset
       placeholder: "ex. 150 zipped CIF files\nTotal size: 200 MB\nPython parsing script available on dataset GitHub repo"
+    validations:
+      required: true
 
   # Calculations
   - type: dropdown
@@ -176,7 +180,7 @@ body:
       label: Number of Configurations
       description: Enter number of configurations contained in dataset
     validations:
-      required: true
+      required: false
   - type: textarea
     id: config-names
     attributes:
