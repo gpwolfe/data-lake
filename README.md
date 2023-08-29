@@ -19,8 +19,10 @@ Once you have created a dataset submission or request, we will correspond with y
 
 ## Helpful links
 
-[Property definitions from colabfit-tools to use as examples](https://github.com/colabfit/colabfit-tools/blob/master/colabfit/tools/property_definitions.py), should you need to create your own.
+[ColabFit.org](https://colabfit.org/): Explore the ColabFit Exchange
+
+[Property definitions from colabfit-tools](https://github.com/colabfit/colabfit-tools/blob/master/colabfit/tools/property_definitions.py): Examples, should you need to create your own property definition.
 
 
 
-For more information, please contact Prof. Ellad Tadmor at support@colabfit.org.
+For more information about ColabFit, please contact Prof. Ellad Tadmor at support@colabfit.org.
