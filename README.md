@@ -15,3 +15,11 @@ To submit your own dataset:
 * Submit a pull request to the `submit` branch of this repository
 
 Once you have created a dataset submission or request, we will correspond with you through the GitHub issue or pull request interface.
+
+## Helpful links
+
+[Property definitions from colabfit-tools to use as examples](https://github.com/colabfit/colabfit-tools/blob/master/colabfit/tools/property_definitions.py), should you need to create your own.
+
+
+
+For more information, please contact Prof. Ellad Tadmor at support@colabfit.org.
