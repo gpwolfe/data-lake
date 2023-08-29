@@ -1,6 +1,6 @@
 name: Dataset submission/request
 description: Submit/request a dataset
-title: "[Dataset submission]: "
+title: "[Dataset submission/reguest]: "
 labels: ["dataset"]
 # assignees:
 #   - octocat
@@ -38,7 +38,7 @@ body:
     id: authors
     attributes:
       label: Authors
-      description: "Enter a comma-separated list of authors.\nUse full first names rather than initials, unless author is usually attributed by inital(s)"
+      description: "Enter a comma-separated list of authors\nUse full first names rather than initials, unless author is usually attributed by inital(s)"
       placeholder: ex. John B. Smith
     validations:
       required: true
@@ -65,7 +65,7 @@ body:
     attributes:
       label: File details
       description: Provide details about accessing the dataset
-      placeholder: "ex. 150 zipped CIF files.\nTotal size: 200 MB\nPython parsing script available on dataset GitHub repo."
+      placeholder: "ex. 150 zipped CIF files\nTotal size: 200 MB\nPython parsing script available on dataset GitHub repo"
 
   # Calculations
   - type: dropdown
@@ -194,14 +194,14 @@ body:
     id: config-sets
     attributes:
       label: Configuration sets
-      description: Configuration sets are used to define a conceptual grouping over a collection of atomic configurations. Configuration sets are constructed via regex filtering on configuration names.
-      placeholder: "Define set name and corresponding regex:\n^Bulk = Ground state configuration for bulk zincblende\n^Shear: Bulk zincblende with random cell shape modifications"
+      description: "Configuration sets are used to define a conceptual grouping over a collection of atomic configurations. This can be done by regex matching on specified keys. If you are unsure how to do this, or do not know how the data should be grouped, leave this section blank."
+      placeholder: "Specify a key to match on, a regex, and a description of the configuration set:\nname, bulk_*_crystal, Bulk configurations of various perfect crystals\nname, md_trajectory_*, Snapshots from an MD trajectory"
   - type: textarea
     id: config-labels
     attributes:
       label: Configuration labels
-      description: Configuration labels can be attached to your data to improve interpretability. This is done via regex matching on the configuration name.
-      placeholder: "^i(In|P) = interstitial\n^v(In|P|v) = vacancy"
+      description: "Configuration labels can be attached to your data to improve interpretability. This can be done by regex matching on specified keys. If you are unsure how to do this, or do not know how the data should be labeled, leave this section blank."
+      placeholder: "Specify a key to match on, a regex, and a label:\n*surface* \n Slab configurations with various Miller indices\n*vacancy* Bulk configurations with at least one vacancy defect."
   - type: input
     id: license
     attributes:
