@@ -2,8 +2,6 @@ name: Dataset submission/request
 description: Submit/request a dataset
 title: "[Dataset submission/reguest]: "
 labels: ["dataset"]
-# assignees:
-#   - octocat
 body:
   - type: markdown
     attributes:
@@ -26,6 +24,7 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: true
+
   # Dataset Info
   - type: input
     id: dataset-name
@@ -33,7 +32,6 @@ body:
       label: Dataset name
       description: "Enter a short, human-readable dataset name to be used when publishing to the ColabFit Exchange\nUse underscores instead of spaces"
       placeholder: "CHON_Smith_2023"
-
   - type: textarea
     id: authors
     attributes:
@@ -54,7 +52,7 @@ body:
     id: dataset-description
     attributes:
       label: Dataset description
-      description: Provide a human-readable description of the dataset
+      description: Provide a human-readable description of the dataset. This will be visible to users on the ColabFit Exchange
       placeholder: "What does this dataset contain?\nWhy was it created?"
     validations:
       required: true
@@ -103,25 +101,21 @@ body:
         - Psi4
         - Quantum ESPRESSO
         - VASP
-        - Other
+        - Other (provide software below)
     validations:
       required: true
   - type: input
     id: software-if-other
     attributes:
       label: Software (other)
-      description: 'If you selected "Other", please enter software used'
-      #placeholder: What does this dataset contain? Why was it created?
-      # value: "A bug happened!"
+      description: "If you selected Other, please enter software used"
     validations:
       required: false
   - type: input
     id: software-version
     attributes:
       label: Software version(s)
-      description: If known, please enter software version
-      #placeholder: What does this dataset contain? Why was it created?
-      # value: "A bug happened!"
+      description: Please enter software version, if known
     validations:
       required: false
 
@@ -202,6 +196,8 @@ body:
       label: Configuration labels
       description: "Configuration labels can be attached to your data to improve interpretability. This can be done by regex matching on specified keys. If you are unsure how to do this, or do not know how the data should be labeled, leave this section blank."
       placeholder: "Specify a key to match on, a regex, and a label:\n*surface* \n Slab configurations with various Miller indices\n*vacancy* Bulk configurations with at least one vacancy defect."
+
+  # License and permission
   - type: input
     id: license
     attributes:
@@ -216,7 +212,7 @@ body:
     id: permissions
     attributes:
       label: Permissions
-      description: Only applicable if uploading data files
+      description: Only applicable if planning to upload data files
       options:
         - label: I confirm that I have the necessary permissions to submit this dataset
           required: false
