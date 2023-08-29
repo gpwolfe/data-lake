@@ -1,6 +1,6 @@
 name: Dataset submission/request
 description: Submit/request a dataset
-title: "[Dataset submission/reguest]: "
+title: "[Dataset submission/request]: "
 labels: ["dataset"]
 body:
   - type: markdown
