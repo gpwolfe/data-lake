@@ -5,11 +5,11 @@ The ColabFit Data Lake offers a way to request inclusion of an existing dataset 
   
 To nominate an existing dataset for inclusion in the ColabFit Exchange:
 * Open an issue on this repository
-* Fill out the information template
+* Fill out the information template and submit the issue
   
 To submit your own dataset:
 * Open an issue on this repository
-* Fill out the information template
+* Fill out the information template and submit the issue
 * Create a fork of the `main` branch of this repository
 * Upload your dataset files to a single directory on your fork
 * Submit a pull request to the `submit` branch of this repository
