@@ -1,5 +1,7 @@
 # ColabFit-Data
-The ColabFit Data Lake offers a way to request inclusion of an existing dataset in the ColabFit Exchange or submit your own datasets.  
+The ColabFit Exchange hosts datasets created for the purpose of fitting machine learning interatomic potentials (MLIPs).
+  
+Use ColabFit Data-Lake to request inclusion of an existing dataset or submit your own dataset to the ColabFit Exchange.  
   
 ## Overview  
   
