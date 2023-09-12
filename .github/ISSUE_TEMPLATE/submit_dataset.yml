@@ -136,6 +136,7 @@ body:
     id: property-types
     attributes:
       label: Property types
+      multiple: true
       description: Select properties present in dataset. Select all that apply
       options:
         - Atomic forces
