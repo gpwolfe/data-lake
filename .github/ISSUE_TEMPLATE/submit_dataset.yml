@@ -138,14 +138,14 @@ body:
       label: Property types
       description: Select properties present in dataset. Select all that apply
       options:
-        - label: Atomic forces
-        - label: Atomization energy
-        - label: Band gap
-        - label: Cauchy stress
-        - label: Formation energy
-        - label: Free energy
-        - label: Potential energy
-        - label: Other/additional
+        - Atomic forces
+        - Atomization energy
+        - Band gap
+        - Cauchy stress
+        - Formation energy
+        - Free energy
+        - Potential energy
+        - Other/additional
 
   - type: textarea
     id: property-additional
