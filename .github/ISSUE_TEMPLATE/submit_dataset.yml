@@ -192,14 +192,14 @@ body:
     id: config-sets
     attributes:
       label: Configuration sets
-      description: "Configuration sets are used to define a conceptual grouping over a collection of atomic configurations. This can be done by regex matching on specified keys. If you are unsure how to do this, or do not know how the data should be grouped, leave this section blank"
+      description: "Configuration sets are used to define a conceptual grouping over a collection of atomic configurations. This can be done by regex matching on specified keys.\nIf you are unsure how to do this, or do not know how the data should be grouped, leave this section blank"
       placeholder: "Specify a key to match on, a regex, and a description of the configuration set:\nkey\t\tregex\t\t\t\tdescription\nname;\t216atom_crystal/*;\t\tDiamond structures containing 216 atoms at densities of 2.4, 2.8, 3.2, 3.4, and 3.5 g/cm3.\nname;\t512atom_amorphous/*;\tTrajectories from melt-quench simulations for configurations with 512 atoms"
   - type: textarea
     id: config-labels
     attributes:
       label: Configuration labels
-      description: "Configuration labels can be attached to your data to improve interpretability. This can be done by regex matching on specified keys. If you are unsure how to do this, or do not know how the data should be labeled, leave this section blank"
-      placeholder: "Specify a key to match on, a regex, and a label:\nkey\t\tregex\t\tdescription\nprocess;\tcrystal;\t\tdiamond, crystal\nprocess;\tquench1;\t\tamorphous"
+      description: "Configuration labels can be attached to your data to improve interpretability. This can be done by regex matching on specified keys.\nIf you are unsure how to do this, or do not know how the data should be labeled, leave this section blank"
+      placeholder: "Specify a key to match on, a regex, and a label:\nkey\t\tregex\t\tlabel\nprocess;\tcrystal;\t\tdiamond, crystal\nprocess;\tquench1;\t\tamorphous"
 
   # License and permission
   - type: input
