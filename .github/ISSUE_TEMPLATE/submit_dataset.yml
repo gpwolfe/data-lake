@@ -199,7 +199,7 @@ body:
     attributes:
       label: Configuration labels
       description: "Configuration labels can be attached to your data to improve interpretability. This can be done by regex matching on specified keys. If you are unsure how to do this, or do not know how the data should be labeled, leave this section blank"
-      placeholder: "Specify a key to match on, a regex, and a label:\nkey\t\tregex\t\tdescription\nprocess;\tcrystal;\tdiamond,\tcrystal\nprocess;\tquench1;\tamorphous"
+      placeholder: "Specify a key to match on, a regex, and a label:\nkey\t\tregex\t\tdescription\nprocess;\tcrystal;\t\tdiamond, crystal\nprocess;\tquench1;\t\tamorphous"
 
   # License and permission
   - type: input
