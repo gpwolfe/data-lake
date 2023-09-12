@@ -1,6 +1,6 @@
 name: Dataset submission/request
 description: Submit/request a dataset
-title: "[Dataset submission/request]: "
+title: "[Dataset submission/request]: **Enter dataset name here**"
 labels: ["dataset"]
 body:
   - type: markdown
@@ -39,7 +39,7 @@ body:
     attributes:
       label: Authors
       description: "Enter a comma-separated list of authors\nUse full first names rather than initials, unless author is usually attributed by inital(s)"
-      placeholder: ex. John B. Smith
+      placeholder: ex. John B. Smith, Joan L. Smith
     validations:
       required: true
   - type: textarea
@@ -132,11 +132,11 @@ body:
       required: false
 
   # Properties
-  - type: checkboxes
+  - type: dropdown
     id: property-types
     attributes:
       label: Property types
-      description: Select properties present in dataset
+      description: Select properties present in dataset. Select all that apply
       options:
         - label: Atomic forces
         - label: Atomization energy
@@ -151,7 +151,7 @@ body:
     id: property-additional
     attributes:
       label: Other/additional property
-      description: If using a property other than one from  <a href="https://materials.colabfit.org/browse/property-definitions">the approved ColabFit list</a>, you should specify an property definition following the format shown <a href="https://github.com/gpwolfe/colabfit-data/blob/main/examples/example_property_definitions.py"> in the ColabFit standard </a>
+      description: If using a property other than one from  <a href="https://materials.colabfit.org/browse/property-definitions">the approved ColabFit list</a>, you should specify a property definition following the format shown <a href="https://github.com/gpwolfe/colabfit-data/blob/main/examples/example_property_definitions.py"> in the ColabFit standard </a>\nYou may upload a JSON file containing the property definition here
     validations:
       required: false
 
@@ -159,7 +159,7 @@ body:
     id: property-details
     attributes:
       label: Property details
-      description: Enter details for each property; units, per-atom, any additional details
+      description: "Enter details for each property: units, per-atom, any additional details"
       placeholder: "ex. potential-energy: units=eV, per-atom=false"
     validations:
       required: true
@@ -192,7 +192,7 @@ body:
     attributes:
       label: Configuration sets
       description: "Configuration sets are used to define a conceptual grouping over a collection of atomic configurations. This can be done by regex matching on specified keys. If you are unsure how to do this, or do not know how the data should be grouped, leave this section blank."
-      placeholder: "Specify a key to match on, a regex, and a description of the configuration set:\nname, bulk_*_crystal, Bulk configurations of various perfect crystals\nname, md_trajectory_*, Snapshots from an MD trajectory"
+      placeholder: "Specify a key to match on, a regex, and a description of the configuration set:\nFor example:\nname; 216atom_crystal/*; Diamond structures containing 216 atoms at densities of 2.4, 2.6, 2.8, 3.0, 3.2, 3.4, and 3.5 g/cm3.\nname; 216atom_amorphous/*; Trajectories from melt-quench simulations for configurations with 216 atoms\nname; 512atom_amorphous/*; Trajectories from melt-quench simulations for configurations with 512 atoms\n"
   - type: textarea
     id: config-labels
     attributes:
