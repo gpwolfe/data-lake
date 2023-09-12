@@ -152,7 +152,7 @@ body:
     id: property-additional
     attributes:
       label: Other/additional property
-      description: If using a property other than one from  <a href="https://materials.colabfit.org/browse/property-definitions">the approved ColabFit list</a>, you should specify a property definition following the format shown <a href="https://github.com/gpwolfe/colabfit-data/blob/main/examples/example_property_definitions.py"> in the ColabFit standard </a>\nYou may upload a JSON file containing the property definition here
+      description: "If using a property other than one from  <a href='https://materials.colabfit.org/browse/property-definitions'>the approved ColabFit list</a>, you should specify a property definition following the format shown <a href='https://github.com/gpwolfe/colabfit-data/blob/main/examples/example_property_definitions.py'> in the ColabFit standard </a>\nYou may upload a JSON file containing the property definition here"
     validations:
       required: false
 
@@ -193,13 +193,13 @@ body:
     attributes:
       label: Configuration sets
       description: "Configuration sets are used to define a conceptual grouping over a collection of atomic configurations. This can be done by regex matching on specified keys. If you are unsure how to do this, or do not know how the data should be grouped, leave this section blank."
-      placeholder: "Specify a key to match on, a regex, and a description of the configuration set:\nFor example:\nname; 216atom_crystal/*; Diamond structures containing 216 atoms at densities of 2.4, 2.6, 2.8, 3.0, 3.2, 3.4, and 3.5 g/cm3.\nname; 216atom_amorphous/*; Trajectories from melt-quench simulations for configurations with 216 atoms\nname; 512atom_amorphous/*; Trajectories from melt-quench simulations for configurations with 512 atoms\n"
+      placeholder: "Specify a key to match on, a regex, and a description of the configuration set:\nFor example:\nkey\t\tregex\t\tdescription\nname; 216atom_crystal/*; Diamond structures containing 216 atoms at densities of 2.4, 2.6, 2.8, 3.0, 3.2, 3.4, and 3.5 g/cm3.\nname; 512atom_amorphous/*; Trajectories from melt-quench simulations for configurations with 512 atoms\n"
   - type: textarea
     id: config-labels
     attributes:
       label: Configuration labels
       description: "Configuration labels can be attached to your data to improve interpretability. This can be done by regex matching on specified keys. If you are unsure how to do this, or do not know how the data should be labeled, leave this section blank."
-      placeholder: "Specify a key to match on, a regex, and a label:\n*surface* \n Slab configurations with various Miller indices\n*vacancy* Bulk configurations with at least one vacancy defect."
+      placeholder: "Specify a key to match on, a regex, and a label:\nprocess; crystal; diamond, crystal\nFor example:\nkey\t\tregex\t\tdescription\nprocess;\tquench1;\tamorphous\nprocess; quench2; amorphous"
 
   # License and permission
   - type: input
